@@ -1,40 +1,68 @@
-<!--Este desarrollo vamos a diseñar una tarjeta interactiva de Navidad-->
-<!--Nombre: Gabriela Rojas-->
-<!--Actividad1 -->
+<!-- Este desarrollo vamos a diseñar una tarjeta interactiva de navidad-->
+<!--Nombre:gabriela rojas-->
+<!--Actividad 1-->
 
-<!DOCTYPE html> <!-- Esta etiqueta declata el tipo de documento-->
+<!DOCTYPE html> <!-- Esta etiqueta declara el tipo de documento-->
 <html lang="es">
 <head>
-    <!--El titulo de la pagina no es visible en el desarrollo pero es lo que funciona para el SEO-->-->
-<title><Tarjeta de Navidad | Personalizados </title>
-<!--En la etiqueta head va todo lo que no es visible en la pagina web pero la hace funcional-->
-<!--A continuacion los metadatos para que la pagina reconozca, caracteres especiales, y 
-y se adapte a diferentes dispositivos-->
-<meta charset="UTF-8"><!--Este metadato es para los caracteres especiales-->-->
+<title> Tarjeta de Navidad | Personalizados </title>
+<!--En la etiqueta head va todo lo que no es visible en la pagina web pero la  hacen funciona para el SEO-->
+<!--Acontinuación los metadatos para la pagina reconozca, caracteres especiales, y se adapte a diferentes dispositivos-->
+<meta charset="UTF-8"> <!-- Este metadato es para los caracteres especiales-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tarjeta de Navidad interactiva con diseño personalizado">
   <meta name="author" content="Gabriela Rojas">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+<link rel="stylesheet" href="styles.css">
 
- <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script> 
-</head><!-- HASTA AQUI VA EL HEAD-->
+</head> <!-- HASTA AQUI VA EL HEAD-->
 
-<!-- AQUI INICIA EL BODY-->
+<!--AQUI INICIA EL body-->
 <body>
-<div class="main-container">
+    <div class="main-container">
    <!-- Cover -->
    <div class="page active" id="page-0">
     <div class="float-container">
-     <img src="Imagen navidad.jpg" alt="Perrito de navidad" class="XX-img">
+     <img src="Imagen navidad.jpg" alt="perrito navideño" class="cover-img">
     </div>
-    <h1 class="cover-title">Feliz Navidad 2026 </h1>
-    <p class="cover-subtitle">Con todo el cariño del mundo ¡Feliz Navidad!</p>
+    <h1 class="cover-title">FELIZ NAVIDAD 2026 🎄</h1>
+    <p class="cover-subtitle">TE DESO TODO LO BUENO DEL MUNDO ¡FELICES FIESTAS!</p>
     <button id="btn-enter" class="btn-primary">
       <span class="btn-text">Entrar </span>
     </button>
    </div>
 
+   <!--Mensaje pagina 1-->
+<div class="page" id="pagina1">
+    <div class="photo-circle">
+      <img class="photo-img" loading="lazy" src="snoopynavidad.jpg" alt="imagen de navidad">
+    </div>
+    <p class="msg-text">Esta navidad este llena de buenas cosas para ti 💛</p>
+    <button id="btn-next-1" class="btn-secondary">
+      <span class="btn-text">Siguiente</span>
+    </button>
+   </div>
 
-</body>-->
--->
+<!--Mensaje pagina2-->
+<div class="page" id="pagina2">
+    <h2 class="gallery-title">Te quiero mucho   ✨</h2>
+    <div class="gallery-grid">
+     <div class="gallery-item gold-border">
+      <img class="gallery-img" loading="lazy" src="hello kitty navidad.jpg" alt="hello kitty">
+     </div>
+     <div class="gallery-item gold-border">
+      <img class="gallery-img" loading="lazy" src="snoopy azul navidad.jpg" alt="snoopy azul">
+     </div>
+     <div class="gallery-item gold-border">
+      <img class="gallery-img" loading="lazy" src="cinnamon roll.jpg" alt="navidad">
+     </div>
+    </div>
+  
+    <p class="gallery-caption">Que tu navidad sea bien chiclesbombas </p>
+   </div>
+<script src="script.js">
+</script>
+
+</body>
 
 </html>
